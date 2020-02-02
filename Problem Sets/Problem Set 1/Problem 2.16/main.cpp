@@ -7,6 +7,13 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello, World 2!" << std::endl;
+
+    int num1{0}, num2{0}, sum{0};
+
+    std::cout << "Enter two number: \n";
+    std::cin >> num1;
+    std::cin >> num2;
+    sum = num1 + num2;
+    std::cout << "The total sum of the two numbers is: " << sum << std::endl;
     return 0;
 }

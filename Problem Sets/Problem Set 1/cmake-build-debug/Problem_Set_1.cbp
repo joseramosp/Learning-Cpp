@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets/Problem Set 1/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets/Problem Set 1/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets/Problem Set 1/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Problem_Set_1">
-				<Option output="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets/Problem Set 1/cmake-build-debug/Problem_Set_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets/Problem Set 1/cmake-build-debug"/>
+				<Option output="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 1/cmake-build-debug/Problem_Set_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Problem_Set_1"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Problem_Set_1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Problem_Set_1/fast">
-				<Option output="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets/Problem Set 1/cmake-build-debug/Problem_Set_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets/Problem Set 1/cmake-build-debug"/>
+				<Option output="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 1/cmake-build-debug/Problem_Set_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,17 +73,17 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Problem_Set_1/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Problem_Set_1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/Library/Mobile\ Documents/com~apple~CloudDocs/NECC/Spring\ 2020/C++\ Programming\ Language\ -\ CIS\ 240/Problem\ Sets\ and\ Projects\ /Problem\ Sets/Problem\ Set\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets/Problem Set 1/Problem 2.16/main.cpp">
+		<Unit filename="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 1/Problem 2.17/main.cpp">
 			<Option target="Problem_Set_1"/>
 		</Unit>
-		<Unit filename="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets/Problem Set 1/CMakeLists.txt">
+		<Unit filename="/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
