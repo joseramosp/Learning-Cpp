@@ -16,10 +16,13 @@ int main() {
     std::cout << "Enter a five-digit integer:\n";
     std::cin >> number;
 
+    // Putting all the digits in the array
     for(int i = 0, a=number; i<5; i++){
         numbers[i] = a%10;
         a = a/10;
     }
+
+    //Printing all the digits in the number.
     for(int i = 4; i>=0; i--){
         std::cout << numbers[i] << " ";
     }
