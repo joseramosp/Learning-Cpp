@@ -13,7 +13,13 @@
 
 int main() {
 
+    char userInput;
+    int userInputAsAInteger;
 
+    std::cout << "Enter a character:\n";
+    std::cin >> userInput;
+    userInputAsAInteger = static_cast<int>(userInput);
+    std::cout << "The ASCII code of your character is: " << userInputAsAInteger << std::endl;
 
     return 0;
 }

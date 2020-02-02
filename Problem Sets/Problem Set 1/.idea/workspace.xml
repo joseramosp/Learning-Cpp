@@ -12,14 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba2a2374-0193-4ab2-9c6a-791770471f4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Problem 2.19/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem 2.23/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problem 2.28/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem 2.27/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Problem 2.27/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problem_Set_1.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problem_Set_1.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problem_Set_1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problem_Set_1.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problem_Set_1.dir/Problem_2.17/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problem_Set_1.dir/Problem_2.23/main.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problem_Set_1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problem_Set_1.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problem_Set_1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problem_Set_1.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problem_Set_1.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problem_Set_1.dir/depend.internal" afterDir="false" />
@@ -73,11 +72,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Problem 2.27" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Problem 2.28" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Problem 2.28" />
+      <recent name="$PROJECT_DIR$/Problem 2.27" />
       <recent name="$PROJECT_DIR$/Problem 2.23" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -103,7 +104,7 @@
       <updated>1580326196832</updated>
       <workItem from="1580326203485" duration="5765000" />
       <workItem from="1580661133537" duration="1800000" />
-      <workItem from="1580662960766" duration="3578000" />
+      <workItem from="1580662960766" duration="4929000" />
     </task>
     <servers />
   </component>
@@ -124,29 +125,29 @@
     </state>
     <state x="1885" y="102" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/1280.-64.2048.864@1280.-64.2048.864" timestamp="1580663665033" />
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1580332004641" />
-    <state width="2006" height="233" key="GridCell.Tab.0.bottom" timestamp="1580666648924">
+    <state width="2006" height="233" key="GridCell.Tab.0.bottom" timestamp="1580668016789">
       <screen x="1280" y="-64" width="2048" height="864" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-64.2048.864@0.0.1280.800" timestamp="1580566597680" />
-    <state width="2006" height="233" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-64.2048.864@1280.-64.2048.864" timestamp="1580666648924" />
+    <state width="2006" height="233" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-64.2048.864@1280.-64.2048.864" timestamp="1580668016789" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580334222005" />
-    <state width="2006" height="233" key="GridCell.Tab.0.center" timestamp="1580666648921">
+    <state width="2006" height="233" key="GridCell.Tab.0.center" timestamp="1580668016787">
       <screen x="1280" y="-64" width="2048" height="864" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800/1280.-64.2048.864@0.0.1280.800" timestamp="1580566597674" />
-    <state width="2006" height="233" key="GridCell.Tab.0.center/0.0.1280.800/1280.-64.2048.864@1280.-64.2048.864" timestamp="1580666648921" />
+    <state width="2006" height="233" key="GridCell.Tab.0.center/0.0.1280.800/1280.-64.2048.864@1280.-64.2048.864" timestamp="1580668016787" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1580334221999" />
-    <state width="2006" height="233" key="GridCell.Tab.0.left" timestamp="1580666648919">
+    <state width="2006" height="233" key="GridCell.Tab.0.left" timestamp="1580668016786">
       <screen x="1280" y="-64" width="2048" height="864" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800/1280.-64.2048.864@0.0.1280.800" timestamp="1580566597671" />
-    <state width="2006" height="233" key="GridCell.Tab.0.left/0.0.1280.800/1280.-64.2048.864@1280.-64.2048.864" timestamp="1580666648919" />
+    <state width="2006" height="233" key="GridCell.Tab.0.left/0.0.1280.800/1280.-64.2048.864@1280.-64.2048.864" timestamp="1580668016786" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1580334221996" />
-    <state width="2006" height="233" key="GridCell.Tab.0.right" timestamp="1580666648922">
+    <state width="2006" height="233" key="GridCell.Tab.0.right" timestamp="1580668016788">
       <screen x="1280" y="-64" width="2048" height="864" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800/1280.-64.2048.864@0.0.1280.800" timestamp="1580566597677" />
-    <state width="2006" height="233" key="GridCell.Tab.0.right/0.0.1280.800/1280.-64.2048.864@1280.-64.2048.864" timestamp="1580666648922" />
+    <state width="2006" height="233" key="GridCell.Tab.0.right/0.0.1280.800/1280.-64.2048.864@1280.-64.2048.864" timestamp="1580668016788" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1580334222002" />
     <state width="2006" height="289" key="GridCell.Tab.1.bottom" timestamp="1580662938990">
       <screen x="1280" y="-64" width="2048" height="864" />
