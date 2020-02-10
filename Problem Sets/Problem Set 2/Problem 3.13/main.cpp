@@ -25,20 +25,78 @@
 
 using namespace std;
 
-class Employee{
+class Account{
 
 public:
 
+    Account(std::string accountName, int initialBalance): name{accountName} {
 
+        if(initialBalance>0){
+            balance = initialBalance;
+        }
+    }
+
+    void deposit(int depositAmount){
+        if(depositAmount>0){
+            balance = balance + depositAmount;
+        }
+    }
+
+    int getBalance() const {
+        return balance;
+    }
+
+    void setName(std::string accountName){
+        name = accountName;
+    }
+
+    std:: string getName() const {
+        return name;
+    }
+
+    void withdraw(int withdrawalAmount){
+
+        if(withdrawalAmount<=balance){
+            balance = balance - withdrawalAmount;
+        }
+        else{
+            cout << "Your withdrawal account balance is: " << balance << std::endl;
+        }
+    }
 
 private:
 
-
-
+    std::string name;
+    int balance{0};
 };
 
+void displayAccount(Account accountToDisplay){
+    cout << accountToDisplay.getName() << "'s account balance is $" << accountToDisplay.getBalance() << std::endl;
+}
+
 int main() {
+    Account account1{"Jose Ramos", 50};
+    Account account2{"Miguel Pena", -7};
+    int depositAmount;
 
+    displayAccount(account1);
+    displayAccount(account2);
 
+    cout << "\n\nEnter deposit amount for account1: ";
+    cin >> depositAmount;
+    cout << "adding " << depositAmount << " to account1 balance" << std::endl;
+    account1.deposit(depositAmount);
+
+    displayAccount(account1);
+    displayAccount(account2);
+
+    cout << "\n\nEnter deposit amount for account2: ";
+    cin >> depositAmount;
+    cout << "adding " << depositAmount << " to account2 balance" << std::endl;
+    account2.deposit(depositAmount);
+
+    // display balances
+    displayAccount(account1);
+    displayAccount(account2);
 
 }

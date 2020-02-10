@@ -13,16 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba2a2374-0193-4ab2-9c6a-791770471f4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problem Set 2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Problem Set 2/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problem Set 2/Problem 3.11/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Problem Set 2/Problem 3.11/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problem Set 2/Problem 3.13/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Problem Set 2/Problem 3.13/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problem Set 2/Problem 3.14/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Problem Set 2/Problem 3.14/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problem Set 2/cmake-build-debug/CMakeFiles/Problem_Set_2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Problem Set 2/cmake-build-debug/CMakeFiles/Problem_Set_2.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problem Set 2/cmake-build-debug/CMakeFiles/Problem_Set_2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Problem Set 2/cmake-build-debug/CMakeFiles/Problem_Set_2.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problem Set 2/cmake-build-debug/CMakeFiles/Problem_Set_2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Problem Set 2/cmake-build-debug/CMakeFiles/Problem_Set_2.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problem Set 2/cmake-build-debug/CMakeFiles/Problem_Set_2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Problem Set 2/cmake-build-debug/CMakeFiles/Problem_Set_2.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problem Set 2/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Problem Set 2/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Problem Set 2/cmake-build-debug/Problem_Set_2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../Problem Set 2/cmake-build-debug/Problem_Set_2.cbp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +91,7 @@
       <workItem from="1580326203485" duration="5765000" />
       <workItem from="1580661133537" duration="1800000" />
       <workItem from="1580662960766" duration="6315000" />
-      <workItem from="1581313573625" duration="574000" />
+      <workItem from="1581313573625" duration="581000" />
     </task>
     <servers />
   </component>
