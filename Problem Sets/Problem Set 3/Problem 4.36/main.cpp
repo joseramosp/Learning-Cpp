@@ -1,77 +1,88 @@
 //
-// Created by Jose Ramos on 2/9/20.
+// Created by Jose Ramos on 2/16/20.
 //
 
-// 3.11 (Employee Class) Create a class called Employee that includes three pieces of information as data members—a first
-// name (type string ), a last name (type string ) and a monthly
-// salary (type int). Your class should have a constructor that
-// initializes the three data members. Provide a set and a get function for each data member. If the monthly salary is not positive, set it to 0 . Write a test program that demonstrates
-// class Employee ’s capabilities. Create two Employee objects and display each object’s yearly salary. Then give each Employee a 10 percent raise and display each Employee ’s yearly salary again.
+// 4.36 (Modified Account Class) Modify class Account (Exercise 3.9) to represent the balance data member as type double.
+// Also, display all double amounts with two digits to the right of the decimal point.
 
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 using namespace std;
 
-class Employee{
+class Account{
 
 public:
 
-    Employee(std::string fName, std::string lName, int monthlySalary) : firstName{fName}, lastName{lName}, salary{monthlySalary} {};
+    Account(std::string accountName, double initialBalance): name{accountName} {
 
-    const string &getFirstName() const {
-        return firstName;
-    }
-
-    void setFirstName(const string &firstName) {
-        Employee::firstName = firstName;
-    }
-
-    const string &getLastName() const {
-        return lastName;
-    }
-
-    void setLastName(const string &lastName) {
-        Employee::lastName = lastName;
-    }
-
-    int getSalary() const {
-        return salary;
-    }
-
-    void setSalary(int salary) {
-        if(salary > 0)
-        {
-            Employee::salary = salary;
+        if(initialBalance>0){
+            balance = initialBalance;
         }
     }
 
-    int getYearlySalary(){
-        return salary*12;
+    void deposit(double depositAmount){
+        if(depositAmount>0){
+            balance = balance + depositAmount;
+        }
     }
 
-    void giveASalaryRaise(){
-        salary = salary + (salary/10);
+    double getBalance() const {
+        return balance;
+    }
+
+    void setName(std::string accountName){
+        name = accountName;
+    }
+
+    std:: string getName() const {
+        return name;
+    }
+
+    void withdraw(double withdrawalAmount){
+
+        if(withdrawalAmount<=balance){
+            balance = balance - withdrawalAmount;
+        }
+        else{
+            cout << fixed << setprecision(2) << "Your withdrawal account balance is: " << balance << std::endl;
+        }
     }
 
 private:
 
-    std::string firstName, lastName;
-    int salary{0};
-
+    std::string name;
+    double balance{0};
 };
 
+void displayAccount(Account accountToDisplay){
+    cout << fixed << setprecision(2) << accountToDisplay.getName() << "'s account balance is $" << accountToDisplay.getBalance() << std::endl;
+}
+
 int main() {
+    Account account1{"Jose Ramos", 50};
+    Account account2{"Miguel Pena", -7};
+    double depositAmount;
 
-    Employee employee1("Jose", "Ramos", 15000);
-    Employee employee2("Flamp", "Lopez", 17500);
+    displayAccount(account1);
+    displayAccount(account2);
 
-    cout << employee1.getFirstName() << " yearly salary is " << employee1.getYearlySalary() << std::endl;
-    cout << employee2.getFirstName() << " yearly salary is " << employee2.getYearlySalary() << std::endl;
+    cout << "\n\nEnter deposit amount for account1: ";
+    cin >> depositAmount;
+    cout << "adding " << depositAmount << " to account1 balance" << std::endl;
+    account1.deposit(depositAmount);
 
-    employee1.giveASalaryRaise();
-    employee2.giveASalaryRaise();
+    displayAccount(account1);
+    displayAccount(account2);
 
-    cout << employee1.getFirstName() << " yearly salary is " << employee1.getYearlySalary() << std::endl;
-    cout << employee2.getFirstName() << " yearly salary is " << employee2.getYearlySalary() << std::endl;
+    cout << "\n\nEnter deposit amount for account2: ";
+    cin >> depositAmount;
+    cout << "adding " << depositAmount << " to account2 balance" << std::endl;
+    account2.deposit(depositAmount);
+
+    // display balances
+    displayAccount(account1);
+    displayAccount(account2);
+
 }
