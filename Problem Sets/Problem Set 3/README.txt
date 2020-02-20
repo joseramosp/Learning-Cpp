@@ -1,8 +1,8 @@
 * Jose Ramos
 * Student ID: 00299444
 * C++ Programming Language - CIS 240
-* February 9 of 2020
-* Problem Set 2
+* February 16 of 2020
+* Problem Set 3
 ---------------------------
 
 * Objective:
@@ -11,13 +11,17 @@ Problem sets may be worked collaboratively. You are welcome to talk solutions in
 
 Correct solutions to specific problems may be requested after due dates.
 
-Ch 3
+Ch 4 and 5
 
-3.9
-3.10
-3.11
-3.13
-3.14
+exercises
+
+4.28
+4.34
+4.36
+5.30
+5.33
+5.35
+
 
 Submit your solutions in an organized way. Be sure they are clearly documented and commented.
 

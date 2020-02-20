@@ -1,0 +1,82 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_1_Designing_Risk/Die.cpp
+cstdlib
+-
+iostream
+-
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_1_Designing_Risk/DieTester.cpp
+iostream
+-
+Die.cpp
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_1_Designing_Risk/Die.cpp
+ctime
+-
+cstdlib
+-
+SFML/Graphics.h
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_1_Designing_Risk/SFML/Graphics.h
+string
+-
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_1_Designing_Risk/SFML/Graphics.h
+SFML/Window.h
+-
+SFML/Graphics/BlendMode.h
+-
+SFML/Graphics/CircleShape.h
+-
+SFML/Graphics/Color.h
+-
+SFML/Graphics/ConvexShape.h
+-
+SFML/Graphics/Font.h
+-
+SFML/Graphics/FontInfo.h
+-
+SFML/Graphics/Glyph.h
+-
+SFML/Graphics/Image.h
+-
+SFML/Graphics/PrimitiveType.h
+-
+SFML/Graphics/Rect.h
+-
+SFML/Graphics/RectangleShape.h
+-
+SFML/Graphics/RenderStates.h
+-
+SFML/Graphics/RenderTexture.h
+-
+SFML/Graphics/RenderWindow.h
+-
+SFML/Graphics/Shader.h
+-
+SFML/Graphics/Shape.h
+-
+SFML/Graphics/Sprite.h
+-
+SFML/Graphics/Text.h
+-
+SFML/Graphics/Texture.h
+-
+SFML/Graphics/Transform.h
+-
+SFML/Graphics/Transformable.h
+-
+SFML/Graphics/Vertex.h
+-
+SFML/Graphics/VertexArray.h
+-
+SFML/Graphics/VertexBuffer.h
+-
+SFML/Graphics/View.h
+-
+

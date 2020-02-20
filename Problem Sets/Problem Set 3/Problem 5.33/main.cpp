@@ -1,70 +1,66 @@
 //
-// Created by Jose Ramos on 2/9/20.
+// Created by Jose Ramos on 2/16/20.
 //
 
-// 3.14 (C++11 List Initializers) Write a statement that uses list
-// initialization to initialize an object of class Account which provides a constructor that receives an unsigned int , two
-// string s and a double to initialize the accountNumber , firstName ,
-// lastName and balance data members of a new object of the class.
+// 5.33 (DollarAmount with dollars and cents Data Members) Reimplement class DollarAmount from Exercise 5.32 to store
+// data members dollars and cents , rather than amount . Modify the body of each constructor and member function
+// appropriately to manipulate the dollars and cents data members.
 
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-class Account{
-
+class DollarAmount {
 public:
 
-    Account(unsigned int accountNumber, const string &firstName, const string &lastName, double balance)
-            : accountNumber(accountNumber), firstName(firstName), lastName(lastName), balance(balance) {};
+    //DollarAmount();
 
-    unsigned int getAccountNumber() const {
-        return accountNumber;
+    explicit DollarAmount(double value) : dollars(value), cents(int (value * 100) % 100) { }
+    explicit DollarAmount(int64_t bills, int64_t pennies) : dollars(bills), cents(pennies) { }
+
+    void add(DollarAmount right){
+        dollars += right.dollars;
+        cents += right.cents;
+        if(cents >= 100){
+            dollars += cents /100;
+            cents %= 100;
+        }
     }
 
-    void setAccountNumber(unsigned int accountNumber) {
-        Account::accountNumber = accountNumber;
+    void subtract(DollarAmount right){
+        dollars -= right.dollars;
+        cents -= right.cents;
+        if(cents<0){
+            dollars -= 1;
+            cents *= -1;
+        }
     }
 
-    const string &getFirstName() const {
-        return firstName;
+    void addInterest(int rate, int divisor){
+        DollarAmount interest {
+                (double (dollars + double (cents/100)) * rate + divisor / 2) / divisor
+        };
+
+        add(interest);
     }
 
-    void setFirstName(const string &firstName) {
-        Account::firstName = firstName;
-    }
-
-    const string &getLastName() const {
-        return lastName;
-    }
-
-    void setLastName(const string &lastName) {
-        Account::lastName = lastName;
-    }
-
-    double getBalance() const {
-        return balance;
-    }
-
-    void setBalance(double balance) {
-        Account::balance = balance;
+    std::string toString() const {
+        //std::string dollars{std::to_string(amount/100)};
+        //std::string cents{std::to_string(std::abs(amount % 100))};
+        return to_string(dollars) + "." + (cents < 10 ? "0" : "") + to_string(cents);
     }
 
 private:
-
-    unsigned int accountNumber{0};
-    std::string firstName, lastName;
-    double balance{0};
-
+    //int64_t amount{0};
+    int dollars{0}, cents{0};
 };
 
-void displayAccount(Account accountToDisplay){
-    cout << accountToDisplay.getFirstName() << "'s account balance is $" << accountToDisplay.getBalance() << std::endl;
-}
-
 int main() {
-
-    Account account1{23451, "Jose", "Ramos", 250000};
-    displayAccount(account1);
+    DollarAmount myMoney(100, 54);
+    cout << myMoney.toString() << std::endl;
+    myMoney.add(DollarAmount(100));
+    cout << myMoney.toString() << std::endl;
+    myMoney.subtract(DollarAmount(0.10));
+    cout << myMoney.toString() << std::endl;
 }

@@ -52,6 +52,4 @@ int main() {
     cout << myMoney.toString() << std::endl;
     myMoney.add(DollarAmount(100));
     cout << myMoney.toString() << std::endl;
-
-
 }

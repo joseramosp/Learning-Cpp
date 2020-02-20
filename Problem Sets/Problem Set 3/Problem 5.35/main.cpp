@@ -1,98 +1,92 @@
 //
-// Created by Jose Ramos on 2/9/20.
+// Created by Jose Ramos on 2/16/20.
 //
 
-//3.9 (Modified Account Class) Modify class Account (Fig. 3.8) to
-//provide a member function called withdraw that withdraws
-//money from an Account . Ensure that the withdrawal amount
-//does not exceed the Account ’s balance. If it does, the balance
-//should be left unchanged and the member function should display a message indicating "Withdrawal
-//account balance." Modify class AccountTest (Fig. 3.9) to test member function withdraw.
+// 5.35 (Displaying the Interest Rate in the DollarAmount Example) Enhance the main program in Fig. 5.7 to display the
+// interest rate based on the two integers entered by the user. For example, if the user enters 2 and 100, display 2.0%,
+// and if the user enters 2015 and 100000, display 2.015%.
 
 #include <iostream>
 #include <string>
-
+#include <iomanip>
 using namespace std;
 
-class Account{
-
+class DollarAmount {
 public:
 
-    Account(std::string accountName, int initialBalance): name{accountName} {
+    //DollarAmount();
 
-        if(initialBalance>0){
-            balance = initialBalance;
+    explicit DollarAmount(double value) : dollars(value), cents(int (value * 100) % 100) { }
+    explicit DollarAmount(int64_t bills, int64_t pennies) : dollars(bills), cents(pennies) { }
+
+    void add(DollarAmount right){
+        dollars += right.dollars;
+        cents += right.cents;
+        if(cents >= 100){
+            dollars += cents /100;
+            cents %= 100;
         }
     }
 
-    void deposit(int depositAmount){
-        if(depositAmount>0){
-            balance = balance + depositAmount;
-        }
+    void subtract(DollarAmount right){
+
+        double d1 =  (dollars) + (double (cents)/100);
+        double d2 =  (right.dollars) + (double (right.cents)/100);
+        double total = d1 - d2;
+
+        dollars = int(total);
+        cents = abs(int(total * 100)%100);
+
     }
 
-    int getBalance() const {
-        return balance;
+    void addInterest(int rate, int divisor){
+        DollarAmount interest {
+                (double (dollars +  (double (cents)/100)) * rate ) / divisor
+        };
+        //cout << interest.toString()<< endl;
+        add(interest);
     }
 
-    void setName(std::string accountName){
-        name = accountName;
-    }
-
-    std:: string getName() const {
-        return name;
-    }
-
-    void withdraw(int withdrawalAmount){
-
-        if(withdrawalAmount<=balance){
-            balance = balance - withdrawalAmount;
-        }
-        else{
-            cout << "Your withdrawal account balance is: " << balance << std::endl;
-        }
+    std::string toString() const {
+        //std::string dollars{std::to_string(amount/100)};
+        //std::string cents{std::to_string(std::abs(amount % 100))};
+        return to_string(dollars) + "." + (cents < 10 ? "0" : "") + to_string(cents);
     }
 
 private:
-
-    std::string name;
-    int balance{0};
+    //int64_t amount{0};
+    int dollars{0}, cents{0};
 };
 
 int main() {
-    Account account1{"Jose Ramos", 50};
-    Account account2{"Miguel Pena", -7};
-    int depositAmount;
-    int withdrawalAmount;
+    DollarAmount d1{123.45};
+    DollarAmount d2{15.76};
 
-    cout << "account1: " << account1.getName() << " balance is $" << account1.getBalance() << std::endl;
-    cout << "account2: " << account2.getName() << " balance is $" << account2.getBalance() << std::endl;
+    cout << "After adding d2 (" << d2.toString() <<  ") into d1 (" << d1.toString() << "), d1 = ";
+    d1.add(d2);
+    cout << d1.toString() << "\n";
 
-    cout << "\n\nEnter deposit amount for account1: ";
-    cin >> depositAmount;
-    cout << "adding " << depositAmount << " to account1 balance" << std::endl;
-    account1.deposit(depositAmount);
+    cout << "After subtracting d2 (" << d2.toString() <<  ") from d1 (" << d1.toString() << "), d1 = ";
+    d1.subtract(d2);
+    cout << d1.toString() << "\n";
 
-    cout << "account1: " << account1.getName() << " balance is $" << account1.getBalance() << std::endl;
-    cout << "account2: " << account2.getName() << " balance is $" << account2.getBalance() << std::endl;
+    cout << "After subtracting d1 (" << d1.toString() <<  ") from d2 (" << d2.toString() << "), d2 = ";
+    d2.subtract(d1);
+    cout << d2.toString() << "\n\n";
 
-    cout << "\n\nEnter deposit amount for account2: ";
-    cin >> depositAmount;
-    cout << "adding " << depositAmount << " to account2 balance" << std::endl;
-    account2.deposit(depositAmount);
+    cout << "Enter integer interest rate and divisor. For example:\n"
+        << "for     2%,enter:    2 100\n"
+        << "for   2.3%,enter:   23 1000\n"
+        << "for  2.37%,enter:  237 10000\n"
+        << "for 2.375%,enter: 2375 100000\n";
 
-    // display balances
-    cout << "account1: " << account1.getName() << " balance is $" << account1.getBalance() << std::endl;
-    cout << "account2: " << account2.getName() << " balance is $" << account2.getBalance() << std::endl;
+    int rate;
+    int divisor;
+    cin >> rate >> divisor;
 
-    // Withdraw
-    cout << "\n\nEnter withdrawal amount for account1: ";
-    cin >> withdrawalAmount;
-    cout << "withdrawing " << withdrawalAmount << " from account1 balance" << std::endl;
-    account1.withdraw(withdrawalAmount);
-
-    // display balances
-    cout << "account1: " << account1.getName() << " balance is $" << account1.getBalance() << std::endl;
-    cout << "account2: " << account2.getName() << " balance is $" << account2.getBalance() << std::endl;
+    DollarAmount balance{100000};
+    cout << "\nInitial balance: " << balance.toString() << endl;
+    balance.addInterest(rate,divisor);
+    cout << "\nBalance after interest applied: " << balance.toString() <<  endl;
 
 }
