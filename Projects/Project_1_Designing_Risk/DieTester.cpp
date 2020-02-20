@@ -3,7 +3,6 @@
 #include <ctime>
 #include <cstdlib>
 #include <SFML/Graphics.hpp>
-//#include "SFML/Graphics.h"
 #include <string>
 
 using namespace std;
@@ -34,10 +33,6 @@ public:
 };
 
 int main() {
-//    sf::CircleShape shape;
-//    shape.setRadius(40.f);
-//    shape.setPosition(100.f, 100.f);
-//    shape.setFillColor(sf::Color::Cyan);
 
     srand(time(NULL));
 
@@ -62,13 +57,13 @@ int main() {
         return EXIT_FAILURE;
     sf::Sprite imageSpriteDie2;
     imageSpriteDie2.setTexture(dice2Image);
-    imageSpriteDie2.setPosition(120.f,0.f);
+    imageSpriteDie2.setPosition(120,0);
 
     if(!dice3Image.loadFromFile("dice/d" + to_string(tester.die3.getDieValue()) + ".png"))
         return EXIT_FAILURE;
     sf::Sprite imageSpriteDie3;
     imageSpriteDie3.setTexture(dice3Image);
-    imageSpriteDie3.setPosition(240.f,0.f);
+    imageSpriteDie3.setPosition(240,0);
 
     if(!dice4Image.loadFromFile("dice/d" + to_string(tester.die4.getDieValue()) + ".png"))
         return EXIT_FAILURE;
@@ -87,7 +82,6 @@ int main() {
         }
 
         window.clear();
-//        window.draw(shape);
         window.draw(imageSpriteDie1);
         window.draw(imageSpriteDie2);
         window.draw(imageSpriteDie3);
