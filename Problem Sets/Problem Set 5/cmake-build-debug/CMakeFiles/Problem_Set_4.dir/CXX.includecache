@@ -9,4 +9,10 @@
 /Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 5/Problem 7.13/main.cpp
 iostream
 -
+cstdlib
+-
+array
+-
+time.h
+-
 
