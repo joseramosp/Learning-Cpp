@@ -2,11 +2,15 @@
 // Created by Jose Ramos on 2/29/20.
 //
 
-// 7.13(Duplicate Elimination with array) Use a one-dimensional array to solve the following problem. Read in 20
-// numbers, each of which is between 10 and 100, inclusive. As each number is read, validate it and store it in the
-// array only if it isn’t a duplicate of a number already read. After reading all the values, display only the unique
-// values that the user entered. Provide for the “worst case” in which all 20 numbers are different. Use the smallest
-// possible array to solve this problem.
+// 8.9 (Write C++ Statements) For each of the following, write a single statement that performs the specified task.
+// Assume that long variables value1 and value2 have been declared and value1 has been initialized to 200000.
+// A. Declare the variable longPtr to be a pointer to an object of type long.
+// B. Assign the address of variable value1 to pointer variable longPtr.
+// C. Display the value of the object pointed to by longPtr.
+// D. Assign the value of the object pointed to by longPtr to variable value2.
+// E. Display the value of value2.
+// F. Display the address of value1.
+// G. Display the address stored in longPtr. Is the address displayed the same as value1 ’s?
 
 #include <iostream>
 #include <cstdlib>
@@ -15,6 +19,16 @@
 
 using namespace std;
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    long value1 = 200000;
+    long value2 = 200000;
+
+    long* longPtr = &value1;
+    cout << "longPtr value: "<< *longPtr << endl;
+    value2 = *longPtr;
+    cout << "value2 value: "<< value2 << endl;
+    cout << "value1 address: "<< &value1 << endl;
+    cout << "longPtr address: "<< longPtr << endl;
+
     return 0;
 }
