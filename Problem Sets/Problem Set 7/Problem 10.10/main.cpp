@@ -12,71 +12,34 @@
 #include <iostream>
 #include <cstdlib>
 #include <array>
+#include "Rational.cpp"
 
 using namespace std;
 
-//int main() {
-//    std::cout << "Hello, World!" << std::endl;
+//Rational Rational::operator+(const Rational &a){
 //
-//
-//    return 0;
 //}
 
-class Rational
-{
-    public:
-        Rational( int = 0, int = 1 );
-        Rational addition( const Rational & ) const;
-        Rational subtraction( const Rational & ) const;
-        Rational multiplication( const Rational & ) const;
-        Rational division( const Rational & ) const;
-        void printRational () const;
+int main() {
 
-    private:
-        int numerator;
-        int denominator;
-        void reduce();
+    Rational a = Rational(84,8);
+    Rational b = Rational(26,8);
+    Rational c = Rational(26,0);
+    Rational d = Rational(54,4);
+
+    Rational result = Rational();
+
+    result.add(a,b);
 
 
+    cout <<  "a = " << a.toRationalString() << endl;
+    cout <<  "b = " << b.toRationalString() << endl;
+    cout <<  "c = " << c.toRationalString() << endl;
+    cout <<  "d = " << d.toRationalString() << endl;
+    cout <<  "a+b = " << result.toRationalString() << endl;
 
-};
+    result = a + d;
+    cout <<  "a+d = " << result.toRationalString() << endl;
 
-int main()
-{
-    char s1;
-    int s2, s3, s4, s5;
-
-    Rational x;
-    while(cin >> s1 >> s2 >> s3 >> s4 >> s5)
-    {
-        if(cin.eof())
-        {
-            break;
-        }
-        Rational c(s2, s3), d(s4, s5);
-        if(s1 == '+')
-        {
-            x = c.addition( d );
-            x.printRational();
-            cout << ' ';
-        }
-        else if(s1 == '-')
-        {
-            x = c.subtraction( d );
-            x.printRational();
-            cout << ' ';
-        }
-        else if(s1 == '*')
-        {
-            x = c.multiplication( d );
-            x.printRational();
-            cout << ' ';
-        }
-        else if(s1 == '/')
-        {
-            x = c.division( d );
-            x.printRational();
-            cout << ' ';
-        }
-    }
+    return 0;
 }

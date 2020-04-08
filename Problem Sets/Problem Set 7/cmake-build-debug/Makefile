@@ -123,32 +123,32 @@ Problem_Set_7/fast:
 	$(MAKE) -f CMakeFiles/Problem_Set_7.dir/build.make CMakeFiles/Problem_Set_7.dir/build
 .PHONY : Problem_Set_7/fast
 
-Problem_10.10/main.o: Problem_10.10/main.cpp.o
+Problem_10.6/main.o: Problem_10.6/main.cpp.o
 
-.PHONY : Problem_10.10/main.o
+.PHONY : Problem_10.6/main.o
 
 # target to build an object file
-Problem_10.10/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Problem_Set_7.dir/build.make CMakeFiles/Problem_Set_7.dir/Problem_10.10/main.cpp.o
-.PHONY : Problem_10.10/main.cpp.o
+Problem_10.6/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Problem_Set_7.dir/build.make CMakeFiles/Problem_Set_7.dir/Problem_10.6/main.cpp.o
+.PHONY : Problem_10.6/main.cpp.o
 
-Problem_10.10/main.i: Problem_10.10/main.cpp.i
+Problem_10.6/main.i: Problem_10.6/main.cpp.i
 
-.PHONY : Problem_10.10/main.i
+.PHONY : Problem_10.6/main.i
 
 # target to preprocess a source file
-Problem_10.10/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Problem_Set_7.dir/build.make CMakeFiles/Problem_Set_7.dir/Problem_10.10/main.cpp.i
-.PHONY : Problem_10.10/main.cpp.i
+Problem_10.6/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Problem_Set_7.dir/build.make CMakeFiles/Problem_Set_7.dir/Problem_10.6/main.cpp.i
+.PHONY : Problem_10.6/main.cpp.i
 
-Problem_10.10/main.s: Problem_10.10/main.cpp.s
+Problem_10.6/main.s: Problem_10.6/main.cpp.s
 
-.PHONY : Problem_10.10/main.s
+.PHONY : Problem_10.6/main.s
 
 # target to generate assembly for a file
-Problem_10.10/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Problem_Set_7.dir/build.make CMakeFiles/Problem_Set_7.dir/Problem_10.10/main.cpp.s
-.PHONY : Problem_10.10/main.cpp.s
+Problem_10.6/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Problem_Set_7.dir/build.make CMakeFiles/Problem_Set_7.dir/Problem_10.6/main.cpp.s
+.PHONY : Problem_10.6/main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Problem_Set_7"
-	@echo "... Problem_10.10/main.o"
-	@echo "... Problem_10.10/main.i"
-	@echo "... Problem_10.10/main.s"
+	@echo "... Problem_10.6/main.o"
+	@echo "... Problem_10.6/main.i"
+	@echo "... Problem_10.6/main.s"
 .PHONY : help
 
 
