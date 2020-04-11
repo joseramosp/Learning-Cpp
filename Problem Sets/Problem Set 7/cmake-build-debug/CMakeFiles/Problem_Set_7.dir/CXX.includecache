@@ -6,25 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 7/Problem 11.10/Account.h
-cmath
--
-
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 7/Problem 11.10/CheckingAccount.h
-Account.h
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 7/Problem 11.10/Account.h
-
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 7/Problem 11.10/SavingsAccount.h
-Account.h
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 7/Problem 11.10/Account.h
-
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 7/Problem 11.10/main.cpp
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 7/Problem 10.6/main.cpp
 iostream
 -
-Account.h
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 7/Problem 11.10/Account.h
-SavingsAccount.h
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 7/Problem 11.10/SavingsAccount.h
-CheckingAccount.h
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Problem Sets/Problem Set 7/Problem 11.10/CheckingAccount.h
+cstdlib
+-
+array
+-
 
