@@ -5,19 +5,29 @@
 #ifndef PROJECT_2_CARD_H
 #define PROJECT_2_CARD_H
 
-//#include <cstdlib>
-//#include <stdio.h>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 class Card {
 
 public:
-    Card(const string &army, const string &country, const string &continent) : army(army), country(country), continent(continent) {}
-    string getArmy(void);
-    string getCountry(void);
-    string getContinent(void);
+
+    Card(const string &army, const string &country, const string &continent);
+
+    const string &getArmy() const;
+
+    void setArmy(const string &army);
+
+    const string &getCountry() const;
+
+    void setCountry(const string &country);
+
+    const string &getContinent() const;
+
+    void setContinent(const string &continent);
+
     string getCardInfo();
 
 private:

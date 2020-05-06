@@ -6,17 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Die.cpp
-cstdlib
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Card.cpp
+Card.h
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Card.h
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Card.h
+iostream
 -
+string
+-
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Deck.cpp
+Deck.h
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Deck.h
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Deck.h
+iostream
+-
+Card.cpp
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Card.cpp
+cstdio
+-
+vector
+-
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Die.cpp
 iostream
 -
 
 /Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/main.cpp
-iostream
--
 Die.cpp
 /Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Die.cpp
+Deck.cpp
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Deck.cpp
 ctime
 -
 cstdlib

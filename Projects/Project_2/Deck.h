@@ -5,9 +5,22 @@
 #ifndef PROJECT_2_DECK_H
 #define PROJECT_2_DECK_H
 
+#include <iostream>
+#include "Card.cpp"
+#include <cstdio>
+#include <vector>
+
+using namespace std;
 
 class Deck {
+public:
+    void showDeck();
+    Deck();
+    int size();
+    void shuffle();
 
+private:
+    vector<Card> cards;
 };
 
 

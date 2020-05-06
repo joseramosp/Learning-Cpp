@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
+#set(SOURCE_FILES main.cpp Card.cpp Deck.cpp)
 set(SOURCE_FILES main.cpp)
 add_executable(Project_2 ${SOURCE_FILES})
 include_directories(/usr/local/include)

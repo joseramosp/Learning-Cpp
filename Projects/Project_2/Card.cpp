@@ -4,18 +4,33 @@
 
 #include "Card.h"
 
-string Card::getArmy() {
-    return Card::army;
+Card::Card(const string &army, const string &country, const string &continent) : army(army), country(country), continent(continent) {}
+
+const string &Card::getArmy() const {
+    return army;
 }
 
-string Card::getCountry() {
-    return Card::country;
+void Card::setArmy(const string &army) {
+    Card::army = army;
 }
 
-string Card::getContinent() {
-    return Card::continent;
+const string &Card::getCountry() const {
+    return country;
 }
 
-//string getCardInfo(){
-//    return "Army: " + Card::getArmy() + " Country: " + country + " Continent: " + continent;
-//}
+void Card::setCountry(const string &country) {
+    Card::country = country;
+}
+
+const string &Card::getContinent() const {
+    return continent;
+}
+
+void Card::setContinent(const string &continent) {
+    Card::continent = continent;
+}
+
+string Card::getCardInfo() {
+    return "Army: " + army + " | Country: " + country + " | Continent: " + continent;
+//    return "Army: ";
+}

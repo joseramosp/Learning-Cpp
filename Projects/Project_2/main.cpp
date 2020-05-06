@@ -1,11 +1,9 @@
-#include <iostream>
 #include "Die.cpp"
+#include "Deck.cpp"
 #include <ctime>
 #include <cstdlib>
 #include <SFML/Graphics.hpp>
 #include <string>
-
-using namespace std;
 
 class DieSet{
 
@@ -87,15 +85,16 @@ int main() {
 
     bool gameIsOver = false;
     int userInput = 0;
+    Deck deck = Deck();
 
     while(!gameIsOver){
         cout << "Enter one of the next options:\n" << endl;
-        cout << "Enter \"1\" to roll dice" << endl;
-        cout << "Enter \"2\" to shuffle deck" << endl;
-        cout << "Enter \"3\" to get a card" << endl;
-        cout << "Enter \"4\" to show all cards in deck" << endl;
-        cout << "Enter \"5\" to show all cards in hand" << endl;
-        cout << "Enter \"6\" to quit the game\n" << endl;
+        cout << "Enter \"1\" to roll dice." << endl;
+        cout << "Enter \"2\" to shuffle deck." << endl;
+        cout << "Enter \"3\" to get a card." << endl;
+        cout << "Enter \"4\" to show all cards in deck." << endl;
+        cout << "Enter \"5\" to show all cards in hand." << endl;
+        cout << "Enter \"6\" to quit the game.\n" << endl;
 
         cin >> userInput;
 
@@ -107,13 +106,17 @@ int main() {
                 displayDice(dice);
                 break;
             case 2:
-                cout << "Shuffling deck\n" << endl;
+                deck.shuffle();
+                cout << "Deck has been shuffled!\n" << endl;
                 break;
             case 3:
                 cout << "Getting a card\n" << endl;
                 break;
             case 4:
-                cout << "Showing all cards in deck\n" << endl;
+                cout << "Showing all cards in deck:\n" << endl;
+                cout << "Total cards available in deck: " + to_string(deck.size()) + "\n"<< endl;
+                deck.showDeck();
+                cout << "" << endl;
                 break;
             case 5:
                 cout << "Showing all cards in hand\n" << endl;
