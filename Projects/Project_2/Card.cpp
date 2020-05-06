@@ -16,6 +16,6 @@ string Card::getContinent() {
     return Card::continent;
 }
 
-string getCardInfo(){
-    return "Army: " + Card::getArmy() + " Country: " + country + " Continent: " + continent;
-}
+//string getCardInfo(){
+//    return "Army: " + Card::getArmy() + " Country: " + country + " Continent: " + continent;
+//}
