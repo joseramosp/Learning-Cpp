@@ -221,6 +221,12 @@ Project_2_BINARY_DIR:STATIC=/Users/jose/Library/Mobile Documents/com~apple~Cloud
 //Value Computed by CMake
 Project_2_SOURCE_DIR:STATIC=/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2
 
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=/usr/local/lib/cmake/SFML
+
+//Path to a file.
+SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries

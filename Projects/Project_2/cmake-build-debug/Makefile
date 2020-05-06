@@ -123,60 +123,6 @@ Project_2/fast:
 	$(MAKE) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/build
 .PHONY : Project_2/fast
 
-Card.o: Card.cpp.o
-
-.PHONY : Card.o
-
-# target to build an object file
-Card.cpp.o:
-	$(MAKE) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/Card.cpp.o
-.PHONY : Card.cpp.o
-
-Card.i: Card.cpp.i
-
-.PHONY : Card.i
-
-# target to preprocess a source file
-Card.cpp.i:
-	$(MAKE) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/Card.cpp.i
-.PHONY : Card.cpp.i
-
-Card.s: Card.cpp.s
-
-.PHONY : Card.s
-
-# target to generate assembly for a file
-Card.cpp.s:
-	$(MAKE) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/Card.cpp.s
-.PHONY : Card.cpp.s
-
-Deck.o: Deck.cpp.o
-
-.PHONY : Deck.o
-
-# target to build an object file
-Deck.cpp.o:
-	$(MAKE) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/Deck.cpp.o
-.PHONY : Deck.cpp.o
-
-Deck.i: Deck.cpp.i
-
-.PHONY : Deck.i
-
-# target to preprocess a source file
-Deck.cpp.i:
-	$(MAKE) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/Deck.cpp.i
-.PHONY : Deck.cpp.i
-
-Deck.s: Deck.cpp.s
-
-.PHONY : Deck.s
-
-# target to generate assembly for a file
-Deck.cpp.s:
-	$(MAKE) -f CMakeFiles/Project_2.dir/build.make CMakeFiles/Project_2.dir/Deck.cpp.s
-.PHONY : Deck.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -213,12 +159,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Project_2"
-	@echo "... Card.o"
-	@echo "... Card.i"
-	@echo "... Card.s"
-	@echo "... Deck.o"
-	@echo "... Deck.i"
-	@echo "... Deck.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
