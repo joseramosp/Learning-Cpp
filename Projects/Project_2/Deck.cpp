@@ -2,57 +2,6 @@
 // Created by Jose Ramos on 4/9/20.
 //
 
-//  Infantry, Cavalry, or Artillery
-//
-//  North America (5)
-//      Alaska
-//      Alberta (Western Canada)
-//      Central America
-//      Eastern United States
-//      Greenland
-//      Northwest Territory
-//      Ontario (Central Canada)
-//      Quebec (Eastern Canada)
-//      Western United States
-//  South America (2)
-//      Argentina
-//      Brazil
-//      Peru
-//      Venezuela
-//  Europe (5)
-//      Great Britain (Great Britain & Ireland)
-//      Iceland
-//      Northern Europe
-//      Scandinavia
-//      Southern Europe
-//      Ukraine (Eastern Europe, Russia)
-//      Western Europe
-//  Africa (3)
-//      Congo (Central Africa)
-//      East Africa[note 1]
-//      Egypt
-//      Madagascar
-//      North Africa
-//      South Africa
-//  Asia (7)
-//      Afghanistan[note 2]
-//      China
-//      India (Hindustan)
-//      Irkutsk
-//      Japan
-//      Kamchatka
-//      Middle East[note 1]
-//      Mongolia
-//      Siam (Southeast Asia)
-//      Siberia
-//      Ural
-//      Yakutsk
-//  Australia (2)
-//      Eastern Australia
-//      Indonesia
-//      New Guinea
-//      Western Australia
-
 #include "Deck.h"
 
 Deck::Deck() {
@@ -108,8 +57,10 @@ Deck::Deck() {
 }
 
 void Deck::showDeck() {
-    for(Card card : cards){
-        cout << card.getCardInfo() << endl;
+    if(!cards.empty()){
+        for(Card card : cards){
+            cout << card.getCardInfo() << endl;
+        }
     }
 }
 
@@ -119,7 +70,13 @@ int Deck::size() {
 
 void Deck::shuffle() {
     for(Card card : cards){
-        cards.insert(rand()%cards.size(), cards.erase(rand()%cards.size()));
+        cards.insert(cards.cbegin() + rand()%cards.size(), cards.erase(cards.cbegin() + rand()%cards.size())->copy());
+    }
+}
+
+Card Deck::throwCard() {
+    if(!cards.empty()){
+        return cards.erase(cards.cend() - 1)->copy();
     }
 }
 

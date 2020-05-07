@@ -1,5 +1,6 @@
 #include "Die.cpp"
 #include "Deck.cpp"
+#include "Player.cpp"
 #include <ctime>
 #include <cstdlib>
 #include <SFML/Graphics.hpp>
@@ -12,28 +13,41 @@ public:
     Die die1 = Die{};
     Die die2 = Die{};
     Die die3 = Die{};
-    Die die4 = Die{};
 
     void rollDice(){
         die1.rollDie();
         die2.rollDie();
         die3.rollDie();
-        die4.rollDie();
     }
 
-    void printDiceValue(){
-        std::cout << "Die 1 value: " << die1.getDieValue() << "\n";
-        std::cout << "Die 2 value: " << die2.getDieValue() << "\n";
-        std::cout << "Die 3 value: " << die3.getDieValue() << "\n";
-        std::cout << "Die 4 value: " << die4.getDieValue() << "\n" << std::endl;
+    void printDiceValue(int amountToShow){
+
+        switch(amountToShow){
+            case 1:
+                std::cout << "Die 1 value: " << die1.getDieValue() << "\n" << std::endl;
+                break;
+            case 2:
+                std::cout << "Die 1 value: " << die1.getDieValue() << "\n";
+                std::cout << "Die 2 value: " << die2.getDieValue() << "\n" << std::endl;
+                break;
+            case 3:
+                std::cout << "Die 1 value: " << die1.getDieValue() << "\n";
+                std::cout << "Die 2 value: " << die2.getDieValue() << "\n";
+                std::cout << "Die 3 value: " << die3.getDieValue() << "\n" << std::endl;
+                break;
+            default:
+
+                break;
+        }
     }
 };
 
-int displayDice(DieSet dice){
+int displayDice(DieSet dice, int amountToShow){
+
     sf::RenderWindow window;
     window.create(sf::VideoMode(460,100), "Project 2");
 
-    sf::Texture dice1Image, dice2Image, dice3Image, dice4Image;
+    sf::Texture dice1Image, dice2Image, dice3Image;
 
     if(!dice1Image.loadFromFile("dice/d" + to_string(dice.die1.getDieValue()) + ".png"))
         return EXIT_FAILURE;
@@ -52,12 +66,6 @@ int displayDice(DieSet dice){
     imageSpriteDie3.setTexture(dice3Image);
     imageSpriteDie3.setPosition(240,0);
 
-    if(!dice4Image.loadFromFile("dice/d" + to_string(dice.die4.getDieValue()) + ".png"))
-        return EXIT_FAILURE;
-    sf::Sprite imageSpriteDie4;
-    imageSpriteDie4.setTexture(dice4Image);
-    imageSpriteDie4.setPosition(360,0);
-
     while (window.isOpen())
     {
         sf::Event event;
@@ -69,11 +77,27 @@ int displayDice(DieSet dice){
         }
 
         window.clear();
-        window.draw(imageSpriteDie1);
-        window.draw(imageSpriteDie2);
-        window.draw(imageSpriteDie3);
-        window.draw(imageSpriteDie4);
-        window.display();
+
+        switch(amountToShow){
+            case 1:
+                window.draw(imageSpriteDie1);
+                window.display();
+                break;
+            case 2:
+                window.draw(imageSpriteDie1);
+                window.draw(imageSpriteDie2);
+                window.display();
+                break;
+            case 3:
+                window.draw(imageSpriteDie1);
+                window.draw(imageSpriteDie2);
+                window.draw(imageSpriteDie3);
+                window.display();
+                break;
+            default:
+
+                break;
+        }
     }
 }
 
@@ -86,6 +110,8 @@ int main() {
     bool gameIsOver = false;
     int userInput = 0;
     Deck deck = Deck();
+    Player player = Player();
+    player.setUp();
 
     while(!gameIsOver){
         cout << "Enter one of the next options:\n" << endl;
@@ -100,17 +126,26 @@ int main() {
 
         switch (userInput){
             case 1:
-                cout << "Rolling Dice\n" << endl;
-                dice.rollDice();
-                dice.printDiceValue();
-                displayDice(dice);
+                cout << "How many dice do you want to roll?" << endl;
+                cout << "Enter 1, 2 or 3 OR any other key to go back:" << endl;
+                cin >> userInput;
+                cout << "" <<endl;
+                if(userInput > 0 && userInput < 4){
+                    cout << "Rolling Dice\n" << endl;
+                    dice.rollDice();
+                    dice.printDiceValue(userInput);
+                    displayDice(dice,userInput);
+                }
                 break;
             case 2:
                 deck.shuffle();
                 cout << "Deck has been shuffled!\n" << endl;
                 break;
             case 3:
-                cout << "Getting a card\n" << endl;
+                player.addCard(deck.throwCard());
+                cout << player.getName() + " has " + to_string(player.totalCard()) + " card/s: \n" << endl;
+                player.showCards();
+                cout << "" << endl;
                 break;
             case 4:
                 cout << "Showing all cards in deck:\n" << endl;
@@ -119,7 +154,9 @@ int main() {
                 cout << "" << endl;
                 break;
             case 5:
-                cout << "Showing all cards in hand\n" << endl;
+                cout << player.getName() + " has " + to_string(player.totalCard()) + " card/s: \n" << endl;
+                player.showCards();
+                cout << "" << endl;
                 break;
             case 6:
                 cout << "Bye bye\n" << endl;
@@ -132,3 +169,5 @@ int main() {
     }
     return 0;
 }
+
+// TODO: Ask the player how many dice want to roll

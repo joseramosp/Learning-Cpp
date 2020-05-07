@@ -18,6 +18,7 @@ public:
     Deck();
     int size();
     void shuffle();
+    Card throwCard();
 
 private:
     vector<Card> cards;

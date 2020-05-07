@@ -6,6 +6,8 @@ CMakeFiles/Project_2.dir/main.cpp.o: ../Card.h
 CMakeFiles/Project_2.dir/main.cpp.o: ../Deck.cpp
 CMakeFiles/Project_2.dir/main.cpp.o: ../Deck.h
 CMakeFiles/Project_2.dir/main.cpp.o: ../Die.cpp
+CMakeFiles/Project_2.dir/main.cpp.o: ../Player.cpp
+CMakeFiles/Project_2.dir/main.cpp.o: ../Player.h
 CMakeFiles/Project_2.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Project_2.dir/main.cpp.o: /usr/local/include/SFML/Config.hpp
 CMakeFiles/Project_2.dir/main.cpp.o: /usr/local/include/SFML/Graphics.hpp

@@ -9,6 +9,8 @@
 /Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Card.cpp
 Card.h
 /Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Card.h
+utility
+-
 
 /Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Card.h
 iostream
@@ -34,11 +36,23 @@ vector
 iostream
 -
 
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Player.cpp
+Player.h
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Player.h
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Player.h
+cstdio
+-
+vector
+-
+
 /Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/main.cpp
 Die.cpp
 /Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Die.cpp
 Deck.cpp
 /Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Deck.cpp
+Player.cpp
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_2/Player.cpp
 ctime
 -
 cstdlib

@@ -14,19 +14,15 @@ class Card {
 
 public:
 
-    Card(const string &army, const string &country, const string &continent);
+    Card(string army, string country, string continent);
 
     const string &getArmy() const;
 
-    void setArmy(const string &army);
-
     const string &getCountry() const;
-
-    void setCountry(const string &country);
 
     const string &getContinent() const;
 
-    void setContinent(const string &continent);
+    Card copy();
 
     string getCardInfo();
 
