@@ -17,7 +17,10 @@ Submit all classes and test files.
 
 * NOTE: 
 
+In order to run the graphics, make sure you have the working directory set as the project folder.
 
+The most difficult part was dealing with the duplicated declaration errors because of including classes that where inherence when importing another class.
 
-* Citations: 
+* Citations:
 
+I downloaded the SFML library from here -> https://www.sfml-dev.org/download/csfml/ 

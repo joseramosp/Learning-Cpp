@@ -1,0 +1,64 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Card.cpp
+Card.h
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Card.h
+utility
+-
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Card.h
+iostream
+-
+string
+-
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Continent.cpp
+Continent.h
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Continent.h
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Continent.h
+Territory.cpp
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Territory.cpp
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Game.cpp
+Game.h
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Game.h
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Game.h
+Continent.cpp
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Continent.cpp
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Player.cpp
+Player.h
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Player.h
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Player.h
+Card.cpp
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Card.cpp
+cstdio
+-
+vector
+-
+Territory.cpp
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Territory.cpp
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Territory.cpp
+Territory.h
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Territory.h
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Territory.h
+Player.cpp
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Player.cpp
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/main.cpp
+iostream
+-
+Game.cpp
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Project_3/Game.cpp
+

@@ -169,5 +169,3 @@ int main() {
     }
     return 0;
 }
-
-// TODO: Ask the player how many dice want to roll
