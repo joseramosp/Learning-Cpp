@@ -5,6 +5,8 @@
 #include <SFML/Window.hpp>
 #include <SFML/OpenGL.hpp>
 #include <string>
+#include "Collision.h"
+#include "PersonNode.h"
 
 using namespace std;
 
@@ -109,6 +111,11 @@ int main() {
 
     Screen screen = MENU;
 
+
+    // People Node //
+    PersonNode nodeTest = PersonNode();
+
+
     while (window.isOpen()) {
         sf::Event event;
 
@@ -185,6 +192,9 @@ int main() {
             else{
                 goBackButton.setFillColor(sf::Color::Blue);
             }
+
+            nodeTest.printInfo();
+            nodeTest.move();
 
             window.clear(sf::Color::Black);
             window.draw(simulationFrame);

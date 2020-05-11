@@ -123,6 +123,60 @@ Final_Project/fast:
 	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/build
 .PHONY : Final_Project/fast
 
+Collision.o: Collision.cpp.o
+
+.PHONY : Collision.o
+
+# target to build an object file
+Collision.cpp.o:
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/Collision.cpp.o
+.PHONY : Collision.cpp.o
+
+Collision.i: Collision.cpp.i
+
+.PHONY : Collision.i
+
+# target to preprocess a source file
+Collision.cpp.i:
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/Collision.cpp.i
+.PHONY : Collision.cpp.i
+
+Collision.s: Collision.cpp.s
+
+.PHONY : Collision.s
+
+# target to generate assembly for a file
+Collision.cpp.s:
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/Collision.cpp.s
+.PHONY : Collision.cpp.s
+
+PersonNode.o: PersonNode.cpp.o
+
+.PHONY : PersonNode.o
+
+# target to build an object file
+PersonNode.cpp.o:
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/PersonNode.cpp.o
+.PHONY : PersonNode.cpp.o
+
+PersonNode.i: PersonNode.cpp.i
+
+.PHONY : PersonNode.i
+
+# target to preprocess a source file
+PersonNode.cpp.i:
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/PersonNode.cpp.i
+.PHONY : PersonNode.cpp.i
+
+PersonNode.s: PersonNode.cpp.s
+
+.PHONY : PersonNode.s
+
+# target to generate assembly for a file
+PersonNode.cpp.s:
+	$(MAKE) -f CMakeFiles/Final_Project.dir/build.make CMakeFiles/Final_Project.dir/PersonNode.cpp.s
+.PHONY : PersonNode.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Final_Project"
+	@echo "... Collision.o"
+	@echo "... Collision.i"
+	@echo "... Collision.s"
+	@echo "... PersonNode.o"
+	@echo "... PersonNode.i"
+	@echo "... PersonNode.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -3,7 +3,7 @@ project(Final_Project)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Final_Project main.cpp)
+add_executable(Final_Project main.cpp Collision.cpp Collision.h PersonNode.h PersonNode.cpp)
 
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 

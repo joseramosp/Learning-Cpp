@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Final_Project.dir/Collision.cpp.o"
+  "CMakeFiles/Final_Project.dir/PersonNode.cpp.o"
   "CMakeFiles/Final_Project.dir/main.cpp.o"
   "Final_Project"
   "Final_Project.pdb"
