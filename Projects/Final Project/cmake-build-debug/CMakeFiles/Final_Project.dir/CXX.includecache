@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Final Project/Collision.h
-SFML/Graphics.hpp
--
-
 /Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Final Project/PersonNode.h
 SFML/Graphics.hpp
 -
@@ -31,8 +27,6 @@ SFML/OpenGL.hpp
 -
 string
 -
-Collision.h
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Final Project/Collision.h
 PersonNode.h
 /Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Final Project/PersonNode.h
 unistd.h

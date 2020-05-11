@@ -24,6 +24,8 @@ bool isElementHover(sf::FloatRect e, sf::Vector2f mp) {
 
 int main() {
 
+    srand(time(NULL));
+
     sf::RenderWindow window, window2, window3;
     window.create(sf::VideoMode(1200, 1000), "COVID-19 Simulator");
 
@@ -198,16 +200,16 @@ int main() {
                 goBackButton.setFillColor(sf::Color::Blue);
             }
 
-            for(int i = 0; i < 500; i++){
-                people[i].move();
+            for(auto & person : people){
+                person.move();
             }
 
             // Reading collisions
-            for(int i = 0; i < 500; i++){
-                if(people[i].isInfected()){
-                    for(int j = 0; j < 500; j++){
-                        if(people[i].getNodeShape().getGlobalBounds().contains(people[j].getLocation())){
-                            people[j].gotSick();
+            for(auto & i : people){
+                if(i.isInfected()){
+                    for(auto & j : people){
+                        if(i.getNodeShape().getGlobalBounds().contains(j.getLocation())){
+                            j.gotSick();
 //                            people[j].printInfo();
                         }
                     }
@@ -217,8 +219,8 @@ int main() {
             window.clear(sf::Color::Black);
             window.draw(simulationFrame);
 
-            for(int i = 0; i < 500; i++){
-                window.draw(people[i].getNodeShape());
+            for(const auto & person : people){
+                window.draw(person.getNodeShape());
             }
             window.draw(goBackButton);
             window.draw(goBackButtonText);

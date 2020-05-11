@@ -155,7 +155,6 @@ CMakeFiles/Final_Project.dir/PersonNode.cpp.o: /usr/local/include/SFML/Window/Wi
 CMakeFiles/Final_Project.dir/PersonNode.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/Final_Project.dir/PersonNode.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
-CMakeFiles/Final_Project.dir/main.cpp.o: ../Collision.h
 CMakeFiles/Final_Project.dir/main.cpp.o: ../PersonNode.h
 CMakeFiles/Final_Project.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Final_Project.dir/main.cpp.o: /usr/local/include/SFML/Config.hpp
