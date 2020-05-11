@@ -60,8 +60,9 @@ int main() {
     if (!texture.loadFromFile("jose.jpg")) {
         return 1;
     }
-    sf::Sprite sprite;
-    sprite.setTexture(texture);
+    sf::Sprite imageSprite;
+    imageSprite.setTexture(texture);
+    imageSprite.setPosition((window.getSize().x - imageSprite.getLocalBounds().width) / 2.0f, 10);
 
 //    sf::Vector2f mp;
 //    mp.x = sf::Mouse::getPosition(window).x;
@@ -81,12 +82,11 @@ int main() {
     text.setOrigin(text.getLocalBounds().left / 2.0f, text.getLocalBounds().top / 2.0f);
 
     sf::Text creatorInfo;
-    creatorInfo.setString("Created by Jose Ramos :)\nGitHub: https://github.com/joseramosp\nWebsite: http://JoseRamos.dev");
+    creatorInfo.setString("Created by Jose Ramos :)\n\nGitHub: https://github.com/joseramosp\n\nWebsite: http://JoseRamos.dev");
     creatorInfo.setFillColor(sf::Color::White);
     creatorInfo.setFont(font);
     creatorInfo.setCharacterSize(60);
-    creatorInfo.setPosition((window.getSize().x - creatorInfo.getLocalBounds().width) / 2.0f, (window.getSize().y - creatorInfo.getLocalBounds().height) / 2.0f);
-    creatorInfo.setOrigin(creatorInfo.getLocalBounds().left / 2.0f, creatorInfo.getLocalBounds().top / 2.0f);
+    creatorInfo.setPosition((window.getSize().x - creatorInfo.getLocalBounds().width) / 2.0f, ((window.getSize().y - creatorInfo.getLocalBounds().height) / 2.0f) + 100);
 
     sf::RectangleShape option1(sf::Vector2f(300, 100));
     option1.setPosition((window.getSize().x - option1.getLocalBounds().width) / 2.0f, 250);
@@ -100,6 +100,10 @@ int main() {
     option3.setPosition((window.getSize().x - option3.getLocalBounds().width) / 2.0f, 750);
     option3.setFillColor(sf::Color::Blue);
 
+    sf::RectangleShape goBackButton(sf::Vector2f(300, 100));
+    goBackButton.setPosition((window.getSize().x - goBackButton.getLocalBounds().width) / 2.0f, 850);
+    goBackButton.setFillColor(sf::Color::Blue);
+
     Screen screen = MENU;
 
     while (window.isOpen()) {
@@ -109,8 +113,8 @@ int main() {
             if (event.type == sf::Event::Closed)
                 window.close();
 
-            // First check if the sprite was clicked.
-//            if(isElementHover(sprite.getGlobalBounds(), sf::Vector2f(event.mouseButton.x, event.mouseButton.y)))
+            // First check if the imageSprite was clicked.
+//            if(isElementHover(imageSprite.getGlobalBounds(), sf::Vector2f(event.mouseButton.x, event.mouseButton.y)))
 //            {
 //                cout << "test" << endl;
 //                option1.setFillColor(sf::Color::Red);
@@ -124,7 +128,6 @@ int main() {
             if (screen == MENU) {
                 if (isElementHover(option1.getGlobalBounds(),
                                    sf::Vector2f(sf::Mouse::getPosition(window).x, sf::Mouse::getPosition(window).y))) {
-                    cout << "option1" << endl;
                     option1.setFillColor(sf::Color::Red);
                     option2.setFillColor(sf::Color::Blue);
                     option3.setFillColor(sf::Color::Blue);
@@ -136,7 +139,6 @@ int main() {
 
                 } else if (isElementHover(option2.getGlobalBounds(), sf::Vector2f(sf::Mouse::getPosition(window).x,
                                                                                   sf::Mouse::getPosition(window).y))) {
-                    cout << "option2" << endl;
                     option1.setFillColor(sf::Color::Blue);
                     option2.setFillColor(sf::Color::Red);
                     option3.setFillColor(sf::Color::Blue);
@@ -148,7 +150,6 @@ int main() {
 
                 } else if (isElementHover(option3.getGlobalBounds(), sf::Vector2f(sf::Mouse::getPosition(window).x,
                                                                                   sf::Mouse::getPosition(window).y))) {
-                    cout << "option3" << endl;
                     option1.setFillColor(sf::Color::Blue);
                     option2.setFillColor(sf::Color::Blue);
                     option3.setFillColor(sf::Color::Red);
@@ -165,25 +166,54 @@ int main() {
                     option3.setFillColor(sf::Color::Blue);
                 }
 
+                window.clear(sf::Color::Black);
+                window.draw(text);
+                window.draw(option1);
+                window.draw(option2);
+                window.draw(option3);
+                window.display();
             }
-            window.clear(sf::Color::Black);
 
-//        sprite.setPosition(sf::Vector2f(50, 300));
 
-//        window.draw(sprite);
-            window.draw(text);
-            window.draw(option1);
-            window.draw(option2);
-            window.draw(option3);
-            window.display();
+//        imageSprite.setPosition(sf::Vector2f(50, 300));
+
+//        window.draw(imageSprite);
+
         }
         if(screen == OPTION1){
+            if (isElementHover(goBackButton.getGlobalBounds(), sf::Vector2f(sf::Mouse::getPosition(window).x,
+                                                                            sf::Mouse::getPosition(window).y))) {
+                goBackButton.setFillColor(sf::Color::Red);
+                if (event.type == sf::Event::MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left) {
+                    screen = MENU;
+                }
+            }
+            else{
+                goBackButton.setFillColor(sf::Color::Blue);
+            }
 
+            window.clear(sf::Color::Black);
+            window.draw(goBackButton);
+            window.display();
         }
 
         if(screen == OPTION2){
-            window.draw(sprite);
-
+            if (isElementHover(goBackButton.getGlobalBounds(), sf::Vector2f(sf::Mouse::getPosition(window).x,
+                                                                       sf::Mouse::getPosition(window).y))) {
+                goBackButton.setFillColor(sf::Color::Red);
+                if(event.type == sf::Event::MouseButtonReleased &&  event.mouseButton.button == sf::Mouse::Left)
+                {
+                    screen = MENU;
+                }
+            }
+            else{
+                goBackButton.setFillColor(sf::Color::Blue);
+            }
+            window.clear(sf::Color::Black);
+            window.draw(imageSprite);
+            window.draw(creatorInfo);
+            window.draw(goBackButton);
+            window.display();
         }
 
         if(screen == OPTION3){
