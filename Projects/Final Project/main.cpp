@@ -17,41 +17,6 @@ bool isElementHover(sf::FloatRect e, sf::Vector2f mp) {
 }
 
 int main() {
-//    std::cout << "Hello, World!" << std::endl;
-//
-//    sf::RenderWindow window;
-//    window.create(sf::VideoMode(1200,1000), "Project 1");
-//
-//    sf::Font font;
-//    if(!font.loadFromFile("arial.ttf")){
-//
-//    }
-//
-//    sf::Text text;
-//    text.setString("Welcome to the the COVID-19 simulator!");
-//    text.setFillColor(sf::Color::White);
-//    text.setFont(font);
-//    text.setCharacterSize(60);
-////    text.setPosition(50,30);
-//    text.setPosition((window.getSize().x - text.getLocalBounds().width)/2.0f ,30);
-//    text.setOrigin(text.getLocalBounds().left/2.0f,text.getLocalBounds().top/2.0f);
-//
-////    sf::Texture dice1Image, dice2Image, dice3Image, dice4Image;
-//
-//    while (window.isOpen())
-//    {
-//        sf::Event event;
-//
-//        while (window.pollEvent(event))
-//        {
-//            if (event.type == sf::Event::Closed)
-//                window.close();
-//        }
-//
-//        window.clear();
-//        window.draw(text);
-//        window.display();
-//    }
 
     sf::RenderWindow window, window2, window3;
     window.create(sf::VideoMode(1200, 1000), "COVID-19 Simulator");
@@ -139,6 +104,9 @@ int main() {
     goBackButton.setPosition((window.getSize().x - goBackButton.getLocalBounds().width) / 2.0f, 850);
     goBackButton.setFillColor(sf::Color::Blue);
 
+    sf::RectangleShape simulationFrame(sf::Vector2f( window.getSize().x, 800));
+    simulationFrame.setFillColor(sf::Color::White);
+
     Screen screen = MENU;
 
     while (window.isOpen()) {
@@ -148,18 +116,6 @@ int main() {
             if (event.type == sf::Event::Closed)
                 window.close();
 
-            // First check if the imageSprite was clicked.
-//            if(isElementHover(imageSprite.getGlobalBounds(), sf::Vector2f(event.mouseButton.x, event.mouseButton.y)))
-//            {
-//                cout << "test" << endl;
-//                option1.setFillColor(sf::Color::Red);
-//                if(event.type == sf::Event::MouseButtonReleased &&  event.mouseButton.button == sf::Mouse::Left)
-//                {
-//                    window.create(sf::VideoMode(1200, 1000),"COVID-19 Simulator");
-//                    window.clear(sf::Color::White);
-//                    option1.setFillColor(sf::Color::Red);
-//                }
-//            }
             if (screen == MENU) {
                 if (isElementHover(option1.getGlobalBounds(),
                                    sf::Vector2f(sf::Mouse::getPosition(window).x, sf::Mouse::getPosition(window).y))) {
@@ -231,6 +187,7 @@ int main() {
             }
 
             window.clear(sf::Color::Black);
+            window.draw(simulationFrame);
             window.draw(goBackButton);
             window.draw(goBackButtonText);
             window.display();
