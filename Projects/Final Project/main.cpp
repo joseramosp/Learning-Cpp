@@ -88,15 +88,50 @@ int main() {
     creatorInfo.setCharacterSize(60);
     creatorInfo.setPosition((window.getSize().x - creatorInfo.getLocalBounds().width) / 2.0f, ((window.getSize().y - creatorInfo.getLocalBounds().height) / 2.0f) + 100);
 
-    sf::RectangleShape option1(sf::Vector2f(300, 100));
+
+    // Buttons text //
+    sf::Text goBackButtonText;
+    goBackButtonText.setString("Go Back");
+    goBackButtonText.setFillColor(sf::Color::White);
+    goBackButtonText.setFont(font);
+    goBackButtonText.setCharacterSize(60);
+    goBackButtonText.setPosition((window.getSize().x - goBackButtonText.getLocalBounds().width) / 2.0f, 850 + 20);
+    goBackButtonText.setOrigin(goBackButtonText.getLocalBounds().left / 2.0f, goBackButtonText.getLocalBounds().top / 2.0f);
+
+    sf::Text Option1Text;
+    Option1Text.setString("Play Simulation");
+    Option1Text.setFillColor(sf::Color::White);
+    Option1Text.setFont(font);
+    Option1Text.setCharacterSize(60);
+    Option1Text.setPosition((window.getSize().x - Option1Text.getLocalBounds().width) / 2.0f - 4, 250 + 15);
+//    Option1Text.setOrigin(Option1Text.getLocalBounds().left / 2.0f, Option1Text.getLocalBounds().top / 2.0f);
+
+    sf::Text Option2Text;
+    Option2Text.setString("About Creator");
+    Option2Text.setFillColor(sf::Color::White);
+    Option2Text.setFont(font);
+    Option2Text.setCharacterSize(60);
+    Option2Text.setPosition((window.getSize().x - Option2Text.getLocalBounds().width) / 2.0f, 500 + 20);
+    Option2Text.setOrigin(Option2Text.getLocalBounds().left / 2.0f, Option2Text.getLocalBounds().top / 2.0f);
+
+    sf::Text Option3Text;
+    Option3Text.setString("Exit");
+    Option3Text.setFillColor(sf::Color::White);
+    Option3Text.setFont(font);
+    Option3Text.setCharacterSize(60);
+    Option3Text.setPosition((window.getSize().x - Option3Text.getLocalBounds().width) / 2.0f, 750 + 20);
+    Option3Text.setOrigin(Option3Text.getLocalBounds().left / 2.0f, Option3Text.getLocalBounds().top / 2.0f);
+
+    // Buttons Shape //
+    sf::RectangleShape option1(sf::Vector2f(Option1Text.getLocalBounds().width + 25, 100));
     option1.setPosition((window.getSize().x - option1.getLocalBounds().width) / 2.0f, 250);
     option1.setFillColor(sf::Color::Blue);
 
-    sf::RectangleShape option2(sf::Vector2f(300, 100));
+    sf::RectangleShape option2(sf::Vector2f(Option1Text.getLocalBounds().width + 20, 100));
     option2.setPosition((window.getSize().x - option2.getLocalBounds().width) / 2.0f, 500);
     option2.setFillColor(sf::Color::Blue);
 
-    sf::RectangleShape option3(sf::Vector2f(300, 100));
+    sf::RectangleShape option3(sf::Vector2f(Option1Text.getLocalBounds().width + 20, 100));
     option3.setPosition((window.getSize().x - option3.getLocalBounds().width) / 2.0f, 750);
     option3.setFillColor(sf::Color::Blue);
 
@@ -171,6 +206,9 @@ int main() {
                 window.draw(option1);
                 window.draw(option2);
                 window.draw(option3);
+                window.draw(Option1Text);
+                window.draw(Option2Text);
+                window.draw(Option3Text);
                 window.display();
             }
 
@@ -194,6 +232,7 @@ int main() {
 
             window.clear(sf::Color::Black);
             window.draw(goBackButton);
+            window.draw(goBackButtonText);
             window.display();
         }
 
@@ -213,6 +252,7 @@ int main() {
             window.draw(imageSprite);
             window.draw(creatorInfo);
             window.draw(goBackButton);
+            window.draw(goBackButtonText);
             window.display();
         }
 
