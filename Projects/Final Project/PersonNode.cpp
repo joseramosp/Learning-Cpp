@@ -37,16 +37,22 @@ void PersonNode::move() {
     }
 
     PersonNode::location = sf::Vector2f(x,y);
+    nodeShape.setPosition(getLocation());
 }
 
 PersonNode::PersonNode() {
     PersonNode::infected = false;
     PersonNode::location = sf::Vector2f(rand() % 1200, rand() % 800);
+    nodeShape.setFillColor(sf::Color::Green);
 }
 
 PersonNode::PersonNode(bool infected) {
     PersonNode::infected = infected;
     PersonNode::location = sf::Vector2f(rand() % 1200, rand() % 800);
+    if(isInfected())
+        nodeShape.setFillColor(sf::Color::Red);
+    else
+        nodeShape.setFillColor(sf::Color::Green);
 }
 
 sf::Vector2f PersonNode::getLocation() {
@@ -56,4 +62,8 @@ sf::Vector2f PersonNode::getLocation() {
 void PersonNode::printInfo() {
     cout << "Location: x= " << getLocation().x << ", y= "<< getLocation().y << endl;
     cout << "Infected: " << isInfected() << "\n"<< endl;
+}
+
+const sf::CircleShape &PersonNode::getNodeShape() const {
+    return nodeShape;
 }

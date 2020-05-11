@@ -7,8 +7,13 @@
 #include <string>
 #include "Collision.h"
 #include "PersonNode.h"
+#include <unistd.h>
+#include <chrono>
+#include <thread>
 
 using namespace std;
+using namespace std::this_thread; // sleep_for, sleep_until
+using namespace std::chrono; // nanoseconds, system_clock, seconds
 
 enum Screen {
     MENU, OPTION1, OPTION2, OPTION3
@@ -113,8 +118,12 @@ int main() {
 
 
     // People Node //
-    PersonNode nodeTest = PersonNode();
 
+    vector<PersonNode> people = vector<PersonNode>();
+    for(int i = 0; i < 499; i++){
+        people.emplace_back(PersonNode());
+    }
+    people.emplace_back(PersonNode(true));
 
     while (window.isOpen()) {
         sf::Event event;
@@ -193,14 +202,29 @@ int main() {
                 goBackButton.setFillColor(sf::Color::Blue);
             }
 
-            nodeTest.printInfo();
-            nodeTest.move();
+//            nodeTest.printInfo();
+//            nodeTest.move();
+
+            for(int i = 0; i < people.size(); i++){
+                people.at(i).move();
+            }
+
+//            people.at(999).move();
 
             window.clear(sf::Color::Black);
             window.draw(simulationFrame);
+
+//            window.draw(nodeTest.getNodeShape());
+            for(int i = 0; i < people.size(); i++){
+                window.draw(people.at(i).getNodeShape());
+//                people.at(i).printInfo();
+            }
+//            window.draw(people.at(999).getNodeShape());
             window.draw(goBackButton);
             window.draw(goBackButtonText);
             window.display();
+//            sleep_for(nanoseconds(10));
+//            sleep_until(system_clock::now() + milliseconds (50));
         }
 
         if(screen == OPTION2){

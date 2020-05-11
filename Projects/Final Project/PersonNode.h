@@ -19,11 +19,13 @@ public:
     void move();
     void printInfo();
     sf::Vector2f getLocation();
+    const sf::CircleShape &getNodeShape() const;
 
 private:
 
     sf::Vector2f location;
     bool infected;
+    sf::CircleShape nodeShape = sf::CircleShape(10);
 
 };
 

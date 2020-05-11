@@ -6,18 +6,40 @@
 
 #IncludeRegexTransform: 
 
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Final Project/PersonNode.cpp
-PersonNode.h
-/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Final Project/PersonNode.h
-cstdlib
--
-iostream
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Final Project/Collision.h
+SFML/Graphics.hpp
 -
 
 /Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Final Project/PersonNode.h
 SFML/Graphics.hpp
 -
 string
+-
+
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Final Project/main.cpp
+iostream
+-
+ctime
+-
+cstdlib
+-
+SFML/Graphics.hpp
+-
+SFML/Window.hpp
+-
+SFML/OpenGL.hpp
+-
+string
+-
+Collision.h
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Final Project/Collision.h
+PersonNode.h
+/Users/jose/Library/Mobile Documents/com~apple~CloudDocs/NECC/Spring 2020/C++ Programming Language - CIS 240/Problem Sets and Projects /Projects/Final Project/PersonNode.h
+unistd.h
+-
+chrono
+-
+thread
 -
 
 /usr/local/include/SFML/Config.hpp
@@ -358,6 +380,34 @@ SFML/Graphics/Rect.hpp
 SFML/Graphics/Transform.hpp
 -
 SFML/System/Vector2.hpp
+-
+
+/usr/local/include/SFML/OpenGL.hpp
+SFML/Config.hpp
+-
+windows.h
+-
+GL/gl.h
+-
+GLES/gl.h
+-
+GLES/glext.h
+-
+GL/gl.h
+-
+OpenGL/gl.h
+-
+OpenGLES/ES1/gl.h
+-
+OpenGLES/ES1/glext.h
+-
+GLES/gl.h
+-
+GLES/glext.h
+-
+GLES2/gl2platform.h
+-
+GLES2/gl2ext.h
 -
 
 /usr/local/include/SFML/System.hpp
