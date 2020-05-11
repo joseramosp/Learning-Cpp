@@ -5,7 +5,6 @@
 #include <SFML/Window.hpp>
 #include <SFML/OpenGL.hpp>
 #include <string>
-#include "Collision.h"
 #include "PersonNode.h"
 #include <unistd.h>
 #include <chrono>
@@ -119,11 +118,13 @@ int main() {
 
     // People Node //
 
-    vector<PersonNode> people = vector<PersonNode>();
+//    vector<PersonNode> people = vector<PersonNode>();
+    PersonNode people[500];
+
     for(int i = 0; i < 499; i++){
-        people.emplace_back(PersonNode());
+        people[i] = PersonNode();
     }
-    people.emplace_back(PersonNode(true));
+    people[499] = PersonNode(true);
 
     while (window.isOpen()) {
         sf::Event event;
@@ -184,11 +185,6 @@ int main() {
                 window.display();
             }
 
-
-//        imageSprite.setPosition(sf::Vector2f(50, 300));
-
-//        window.draw(imageSprite);
-
         }
         if(screen == OPTION1){
             if (isElementHover(goBackButton.getGlobalBounds(), sf::Vector2f(sf::Mouse::getPosition(window).x,
@@ -202,24 +198,28 @@ int main() {
                 goBackButton.setFillColor(sf::Color::Blue);
             }
 
-//            nodeTest.printInfo();
-//            nodeTest.move();
-
-            for(int i = 0; i < people.size(); i++){
-                people.at(i).move();
+            for(int i = 0; i < 500; i++){
+                people[i].move();
             }
 
-//            people.at(999).move();
+            // Reading collisions
+            for(int i = 0; i < 500; i++){
+                if(people[i].isInfected()){
+                    for(int j = 0; j < 500; j++){
+                        if(people[i].getNodeShape().getGlobalBounds().contains(people[j].getLocation())){
+                            people[j].gotSick();
+//                            people[j].printInfo();
+                        }
+                    }
+                }
+            }
 
             window.clear(sf::Color::Black);
             window.draw(simulationFrame);
 
-//            window.draw(nodeTest.getNodeShape());
-            for(int i = 0; i < people.size(); i++){
-                window.draw(people.at(i).getNodeShape());
-//                people.at(i).printInfo();
+            for(int i = 0; i < 500; i++){
+                window.draw(people[i].getNodeShape());
             }
-//            window.draw(people.at(999).getNodeShape());
             window.draw(goBackButton);
             window.draw(goBackButtonText);
             window.display();

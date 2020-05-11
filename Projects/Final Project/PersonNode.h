@@ -16,6 +16,7 @@ public:
     PersonNode();
     PersonNode(bool);
     bool isInfected();
+    void gotSick();
     void move();
     void printInfo();
     sf::Vector2f getLocation();

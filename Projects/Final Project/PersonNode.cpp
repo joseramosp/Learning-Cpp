@@ -67,3 +67,8 @@ void PersonNode::printInfo() {
 const sf::CircleShape &PersonNode::getNodeShape() const {
     return nodeShape;
 }
+
+void PersonNode::gotSick() {
+    PersonNode::infected = true;
+    nodeShape.setFillColor(sf::Color::Red);
+}
