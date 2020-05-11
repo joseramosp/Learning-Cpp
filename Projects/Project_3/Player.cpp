@@ -6,7 +6,8 @@
 #include "Territory.h"
 
 Player::Player(){
-    territories.emplace_back(Territory());
+    Territory t = Territory();
+//    territories.emplace_back(t);
 }
 
 void Player::setName(const string &name) {

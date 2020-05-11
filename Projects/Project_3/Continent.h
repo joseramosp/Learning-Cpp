@@ -7,9 +7,10 @@
 
 #include "Territory.h"
 #include <string>
+#include "Player.h"
 
 //class Territory;
-//class Player;
+class Player;
 
 class Continent {
 public:

@@ -8,9 +8,10 @@
 //#include "Player.cpp"
 
 #include <string>
-#include "Player.h"
+#include <vector>
+//#include "Player.h"
 
-class Player;
+//class Player;
 
 using namespace std;
 
@@ -23,9 +24,9 @@ public:
 
     void setName(string name);
 
-    const Player &getOwner() const;
+//    const Player &getOwner() const;
 
-    void setOwner(const Player &owner);
+//    void setOwner(const Player &owner);
 
     int getArmies() const;
 
@@ -35,7 +36,7 @@ public:
 
 private:
     string name;
-    Player owner;
+//    Player owner;
     int armies;
     vector<Territory> adjacentTerritories;
 };

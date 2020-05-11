@@ -22,8 +22,6 @@ CMakeFiles/Project_3.dir/Player.cpp.o: ../Player.cpp
 CMakeFiles/Project_3.dir/Player.cpp.o: ../Player.h
 CMakeFiles/Project_3.dir/Player.cpp.o: ../Territory.h
 
-CMakeFiles/Project_3.dir/Territory.cpp.o: ../Card.h
-CMakeFiles/Project_3.dir/Territory.cpp.o: ../Player.h
 CMakeFiles/Project_3.dir/Territory.cpp.o: ../Territory.cpp
 CMakeFiles/Project_3.dir/Territory.cpp.o: ../Territory.h
 

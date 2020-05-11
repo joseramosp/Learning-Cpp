@@ -6,9 +6,10 @@
 #define PROJECT_3_GAME_H
 
 #include "Continent.h"
+//#include "Player.h"
 
 //class Continent;
-//class Player;
+class Player;
 
 class Game {
 public:
@@ -25,9 +26,9 @@ public:
 
     void setPlayer2(const Player &player2);
 
-    bool isOver1() const;
+    bool getGameStatus() const;
 
-    void setIsOver(bool isOver);
+    void setGameStatus(bool isOver);
 
     void setUpGame();
 
@@ -35,7 +36,7 @@ private:
     vector<Continent> continents;
     Player player1;
     Player player2;
-    bool isOver = false;
+    bool gameStatus = false;
 
 };
 

@@ -9,7 +9,9 @@ using namespace std;
 
 Game::Game(){
     cout << "Creating Game" << endl;
-    isOver = false;
+    gameStatus = false;
+    Player player = Player();
+    player1 = Player();
     setUpGame();
 }
 
@@ -33,12 +35,12 @@ void Game::setPlayer2(const Player &player2) {
     Game::player2 = player2;
 }
 
-bool Game::isOver1() const {
-    return isOver;
+bool Game::getGameStatus() const {
+    return gameStatus;
 }
 
-void Game::setIsOver(bool isOver) {
-    Game::isOver = isOver;
+void Game::setGameStatus(bool gameStatus) {
+    Game::gameStatus = gameStatus;
 }
 
 void Game::setUpGame() {
