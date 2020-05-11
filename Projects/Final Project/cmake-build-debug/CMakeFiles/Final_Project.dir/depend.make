@@ -34,6 +34,7 @@ CMakeFiles/Final_Project.dir/main.cpp.o: /usr/local/include/SFML/Graphics/Vertex
 CMakeFiles/Final_Project.dir/main.cpp.o: /usr/local/include/SFML/Graphics/VertexArray.hpp
 CMakeFiles/Final_Project.dir/main.cpp.o: /usr/local/include/SFML/Graphics/VertexBuffer.hpp
 CMakeFiles/Final_Project.dir/main.cpp.o: /usr/local/include/SFML/Graphics/View.hpp
+CMakeFiles/Final_Project.dir/main.cpp.o: /usr/local/include/SFML/OpenGL.hpp
 CMakeFiles/Final_Project.dir/main.cpp.o: /usr/local/include/SFML/System.hpp
 CMakeFiles/Final_Project.dir/main.cpp.o: /usr/local/include/SFML/System/Clock.hpp
 CMakeFiles/Final_Project.dir/main.cpp.o: /usr/local/include/SFML/System/Err.hpp

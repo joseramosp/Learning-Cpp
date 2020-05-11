@@ -15,6 +15,10 @@ cstdlib
 -
 SFML/Graphics.hpp
 -
+SFML/Window.hpp
+-
+SFML/OpenGL.hpp
+-
 string
 -
 
@@ -356,6 +360,34 @@ SFML/Graphics/Rect.hpp
 SFML/Graphics/Transform.hpp
 -
 SFML/System/Vector2.hpp
+-
+
+/usr/local/include/SFML/OpenGL.hpp
+SFML/Config.hpp
+-
+windows.h
+-
+GL/gl.h
+-
+GLES/gl.h
+-
+GLES/glext.h
+-
+GL/gl.h
+-
+OpenGL/gl.h
+-
+OpenGLES/ES1/gl.h
+-
+OpenGLES/ES1/glext.h
+-
+GLES/gl.h
+-
+GLES/glext.h
+-
+GLES2/gl2platform.h
+-
+GLES2/gl2ext.h
 -
 
 /usr/local/include/SFML/System.hpp
